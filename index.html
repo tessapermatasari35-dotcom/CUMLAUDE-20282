@@ -1,0 +1,131 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌸 Cute Team 🌸</title>
+    <!-- ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- EMOJI BACKGROUND -->
+    <div class="emoji e1">💖</div>
+    <div class="emoji e2">🌸</div>
+    <div class="emoji e3">✨</div>
+    <div class="emoji e4">🎀</div>
+    <div class="emoji e5">🩷</div>
+    <!-- MENU AWAL -->
+    <div class="menu-awal" id="menuAwal">
+      <h1>🌸 CUMLAUDE 2028 🌸</h1>
+      <p>Kepo dengan anggota kami? ✨</p>
+      <button onclick="masukWebsite()">💖 Masuk</button>
+    </div>
+    <!-- HALAMAN PROFIL -->
+    <div id="homePage" class="hidden">
+      <div class="title">
+        <h1>🌷 Anggota Cumlaude 🌷</h1>
+      </div>
+      <!-- BARIS ATAS -->
+      <div class="top-row">
+        <!-- CARD -->
+        <div class="card">
+          <img src="giza.jpeg" />
+          <h2>GIZA</h2>
+          <span>Cewek kue</span>
+          <div class="icon-tengah">
+            <div class="bulat" onclick="showData('GIZA')">
+              <i class="fa-solid fa-user"></i>
+              <p>Profil</p>
+            </div>
+            <div class="bulat" onclick="showHobi('GIZA')">
+              <i class="fa-solid fa-heart"></i>
+              <p>Moto</p>
+            </div>
+          </div>
+        </div>
+        <!-- CARD -->
+        <div class="card">
+          <img src="ilma.jpeg" />
+          <h2>ILMA</h2>
+          <span>Cewek Monokrom</span>
+          <div class="icon-tengah">
+            <div class="bulat" onclick="showData('ILMA')">
+              <i class="fa-solid fa-user"></i>
+              <p>Profil</p>
+            </div>
+            <div class="bulat" onclick="showHobi('iLMA')">
+              <i class="fa-solid fa-heart"></i>
+              <p>Moto</p>
+            </div>
+          </div>
+        </div>
+        <!-- CARD -->
+        <div class="card">
+          <img src="tessa.jpeg" />
+          <h2>TESSA</h2>
+          <span>Cewek Netral </span>
+          <div class="icon-tengah">
+            <div class="bulat" onclick="showData('TESSA')">
+              <i class="fa-solid fa-user"></i>
+              <p>Profil</p>
+            </div>
+            <div class="bulat" onclick="showHobi('TESSA')">
+              <i class="fa-solid fa-heart"></i>
+              <p>Moto</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- BARIS BAWAH -->
+      <div class="bottom-row">
+        <!-- CARD -->
+        <div class="card">
+          <img src="Tania.jpeg" />
+          <h2>TANIA</h2>
+          <span>Cewek Bumi</span>
+          <div class="icon-tengah">
+            <div class="bulat" onclick="showData('TANIA')">
+              <i class="fa-solid fa-user"></i>
+              <p>Profil</p>
+            </div>
+            <div class="bulat" onclick="showHobi('TANIA')">
+              <i class="fa-solid fa-heart"></i>
+              <p>Moto</p>
+            </div>
+          </div>
+        </div>
+        <!-- CARD -->
+        <div class="card">
+          <img src="arini.jpeg" />
+          <h2>ARINI</h2>
+          <span>Cewek Pekerja Keras</span>
+          <div class="icon-tengah">
+            <div class="bulat" onclick="showData('ARINI')">
+              <i class="fa-solid fa-user"></i>
+              <p>Profil</p>
+            </div>
+            <div class="bulat" onclick="showHobi('ARINI')">
+              <i class="fa-solid fa-heart"></i>
+              <p>Moto</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- POPUP -->
+    <div class="sidebar" id="sidebar">
+      <span class="close" onclick="closeSidebar()">✖</span>
+      <img id="foto" />
+      <h2 id="nama"></h2>
+      <div id="isi"></div>
+    </div>
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
